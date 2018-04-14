@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img src="/static/images/moviedb.png">
+    <form action="{{ url_for("save_user") }}" method="post">
+        <input name="name" type="text" maxlength="200" required>
+        <input name="nickname" type="text" maxlength="10" required>
+        <input name="password" type="password" required>
+        <button type="submit">
+            Guardar
+        </button>
+    </form>
+</body>
+</html>
